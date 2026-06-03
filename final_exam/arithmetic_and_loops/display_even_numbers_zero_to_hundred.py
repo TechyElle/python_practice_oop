@@ -1,15 +1,13 @@
 class EvenNumbers:
-    def __init__(self):
-        self.start = 0
-        self.end = 100
+    def __init__(self, start=0, end=100):
+        self.start = start
+        self.end = end
 
-    def main(self):
-        even_nums = []
+    def run(self):
         for num in range(self.start, self.end + 1):
             if num % 2 == 0:
-                even_nums.append(num)
-                print(f"Even number: {num}")
+                print(f"{num} is an even number.")
     
 if __name__ == "__main__":
-    even_nums = EvenNumbers()
-    even_nums.main()
+    EvenNumbers().run()
+    
