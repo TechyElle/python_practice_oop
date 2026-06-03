@@ -1,92 +1,96 @@
-# Python OOP Practice (Final Exam)
+<p align="center">
+  <img src="https://img.shields.io/badge/🏛️_OOP-Practical_Exam-10B981?style=for-the-badge&logoColor=white" alt="OOP Exam Badge" />
+</p>
 
-Quick programs written in a style you can reproduce on paper in under a minute.
+<h1 align="center">🧩 Python OOP Practice</h1>
 
-## Style rules used here
-- Class-based (OOP integrated)
-- Short, direct code
-- Snake_case variable names
-- No single-letter variables
-- Short human comments when needed
-- For file resources: call `.close()` (when applicable)
+<p align="center">
+  <strong>Classes • One <code>run()</code> • Timed-exam friendly solutions</strong>
+</p>
 
-## How to run
-Example:
+<p align="center">
+  Short OOP scripts written in a consistent pattern—fast to reproduce during a timed practical exam.
+</p>
+
+<p align="center">
+  <img src="https://img.shields.io/badge/Style_Rules-Snake_Case-2DD4BF?style=flat-square" alt="Style rules" />
+  <img src="https://img.shields.io/badge/Exam_Pattern-stdin(open(0))-60A5FA?style=flat-square" alt="Exam pattern" />
+  <img src="https://img.shields.io/badge/OOP-Exactly_1_run()-F59E0B?style=flat-square" alt="OOP" />
+</p>
+
+<p align="center">
+  <a href="#-introduction">Introduction</a> •
+  <a href="#-style-rules">Style Rules</a> •
+  <a href="#-how-to-run">How to run</a> •
+  <a href="#-exam-pattern">Exam pattern</a> •
+  <a href="#-input-patterns">Input patterns</a> •
+  <a href="#-educational-note">Educational note</a>
+</p>
+
+---
+
+## 📌 Introduction
+
+This repository contains short **Python OOP practice** scripts following a consistent structure—ideal for quick repetition during a practical exam.
+
+---
+
+## 🎨 Style rules
+
+- Use a **class** (OOP style).
+- Implement **exactly one** `run()` method.
+- Use **snake_case** variable names.
+- Avoid **single-letter** variable names.
+- Keep comments short (only when needed).
+- When working with file resources, call `.close()`.
+
+---
+
+## 🚀 How to run
+
+From the repository root (`.`):
+
 ```bash
 python final_exam/arithmetic_and_loops/add_two_numbers_and_display.py
 ```
 
-# To Study
+---
 
-These files are short OOP practice programs for the close-notes practical exam.
+## 🎯 Exam pattern (used by all scripts)
 
-Keep the current working directory as `.` when running them.
+1. Create a class for the exercise.
+2. Put all logic inside `run()`.
+3. Read input from `open(0)` (stdin):
+   - create `self.input_file = open(0)` (or equivalent)
+4. Solve the problem (often by collecting values into a list).
+5. Print the final answer.
+6. Close input at the end of `run()`.
+7. Instantiate the class at the bottom and call `.run()`.
 
-Use snake case for variables.
+---
 
-Use all lowercase variable names.
+### ⌨️ Input patterns
 
-Do not use single-letter variable names.
+**Collect 10 numbers**
+- Use `for count in range(10)`
+- Read each number with: `int(self.input_file.readline())`
+- Append into `self.numbers`
 
-Close the input file with `.close()`.
+---
 
-Each program follows the same fast pattern:
+**Collect until the user stops**
+- Use `while True`
+- Read one line with `self.input_file.readline()`
+- Break when the line is empty
+- Use `try` / `except ValueError` to stop when the input is not a number
 
-Make a class for the program.
+---
 
-Write one `run()` method.
+## ⚠️ Educational note
 
-Create the needed variables inside `run()`.
+<div align="center">
 
-Open input with `open(0)`.
+*For educational purposes only. Created for the PUP Object-Oriented Programming course.*
 
-Collect numbers.
-
-Solve the problem.
-
-Print the answer.
-
-Close the input file at the end of `run()`.
-
-Create the object at the bottom.
-
-Call `.run()` on the object.
-
-For programs that collect ten numbers:
-
-Use `for count in range(10)`.
-
-Read the number with `int(self.input_file.readline())`.
-
-Append each number to `self.numbers`.
-
-For programs that collect until the user stops:
-
-Use `while True`.
-
-Read one line from `self.input_file.readline()`.
-
-Break if the line is empty.
-
-Use `try` and `except ValueError`.
-
-Break when the input is not a number.
-
-Study target:
-
-Write the class.
-
-Write `run()`.
-
-Write the variables.
-
-Write the loop.
-
-Write the condition.
-
-Print the answer.
-
-Close the input file.
-
-Make the object and run it.
+</div>
 
