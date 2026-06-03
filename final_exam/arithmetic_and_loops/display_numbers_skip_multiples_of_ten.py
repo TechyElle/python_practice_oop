@@ -1,16 +1,14 @@
 class NumberSkipper:
-    def __init__(self):
-        self.limit = 100
+    def __init__(self, start=0, end=100):
+        self.start = start
+        self.end = end
 
-    def main(self):
-        # loop to limit
-        for num in range(self.limit + 1):
-            # skip multiples of ten
+    def run(self):
+        for num in range(self.start, self.end + 1):
             if num % 10 != 0:
                 print(f"{num} is not a multiple of ten.")
             else:
                 print(f"{num} is a multiple of ten.")
 
 if __name__ == "__main__":
-    skipper = NumberSkipper()
-    skipper.main()
+    NumberSkipper().run()
