@@ -60,8 +60,7 @@ python final_exam/arithmetic_and_loops/add_two_numbers_and_display.py
 
 1. Create a class for the exercise.
 2. Put all logic inside `run()`.
-3. Read input from `open(0)` (stdin):
-   - create `self.input_file = open(0)` (or equivalent)
+3. Read input from (f"...")
 4. Solve the problem (often by collecting values into a list).
 5. Print the final answer.
 6. Close input at the end of `run()`.
