@@ -42,48 +42,9 @@ This repository contains short **Python OOP practice** scripts following a consi
 - Use **snake_case** variable names.
 - Avoid **single-letter** variable names.
 - Keep comments short (only when needed).
-- When working with file resources, call `.close()`.
+- Complete all 60 items.
+- Make sure you can write any item in paper in less than a minute, we will have close notes practical exam.
 
----
-
-## 🚀 How to run
-
-From the repository root (`.`):
-
-```bash
-python final_exam/arithmetic_and_loops/add_two_numbers_and_display.py
-```
-
----
-
-## 🎯 Exam pattern (used by all scripts)
-
-1. Create a class for the exercise.
-2. Put all logic inside `run()`.
-3. Read input from (f"...")
-4. Solve the problem (often by collecting values into a list).
-5. Print the final answer.
-6. Close input at the end of `run()`.
-7. Instantiate the class at the bottom and call `.run()`.
-
----
-
-### ⌨️ Input patterns
-
-**Collect 10 numbers**
-- Use `for count in range(10)`
-- Read each number with: `int(self.input_file.readline())`
-- Append into `self.numbers`
-
----
-
-**Collect until the user stops**
-- Use `while True`
-- Read one line with `self.input_file.readline()`
-- Break when the line is empty
-- Use `try` / `except ValueError` to stop when the input is not a number
-
----
 
 ## ⚠️ Educational note
 
